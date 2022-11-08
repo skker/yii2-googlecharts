@@ -152,11 +152,6 @@ class ComboChart extends Widget
                 }
             });
         ";
-        $js .= "
-            function getGoogleChart() {
-                return combo". $uniqueInt ." = new google.visualization.ComboChart($('#". $this->id ."')[0]);
-            }
-        ";
 
         return $js;
     }   
