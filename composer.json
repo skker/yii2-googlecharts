@@ -1,13 +1,13 @@
 {
-    "name": "bsadnu/yii2-googlecharts",
-    "description": "Google Charts Extension for Yii 2 framework",
+    "name": "skker/yii2-googlecharts",
+    "description": "Google Charts Extension for Yii 2 framework. Forked from bsadnu/yii2-googlecharts",
     "type": "yii2-extension",
     "keywords": ["yii2", "extension", "google", "chart", "charts", "googlecharts"],
     "license": "BSD-2-Clause",
     "authors": [
         {
-            "name": "Stanislav Bannikov",
-            "email": "bsadnu@gmail.com"
+            "name": "Ker SK",
+            "email": "vandzaxe@gmail.com"
         }
     ],
     "require": {
@@ -15,7 +15,7 @@
     },
     "autoload": {
         "psr-4": {
-            "bsadnu\\googlecharts\\": ""
+            "skker\\googlecharts\\": ""
         }
     }   
 }
