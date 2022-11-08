@@ -490,7 +490,8 @@ use bsadnu\googlecharts\ComboChart;
 ```
 ![demo](http://img.sbannikov.info/ComboChart.png)
 ```php
-<?= ComboChart::widget([
+<?php
+echo ComboChart::widget([
 	'id' => 'my-combo-chart-id',
 	'data' => [
 		['Month', 'Bolivia', 'Ecuador', 'Madagascar', 'Papua New Guinea', 'Rwanda', 'Average'],
@@ -537,7 +538,19 @@ use bsadnu\googlecharts\ComboChart;
 	    	]
 	    ]            
 	]
-]) ?>
+]);
+
+// Register javascript to get chart image in PNG.
+$this->registerJs("
+        function getChartImage() {
+            var image = getChartImageData(); // Call getChartImageData(), which is a built-in javacsript function.
+            alert('image: ' + image);
+        }        
+    ",
+    View::POS_END,
+    'handler'
+);
+?>
 ```
 
 ### Line Chart Example
