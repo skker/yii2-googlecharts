@@ -1,8 +1,6 @@
 Google Charts Extension for Yii 2
 ===============================
 
-[![Latest Stable Version](https://poser.pugx.org/bsadnu/yii2-googlecharts/v/stable)](https://packagist.org/packages/bsadnu/yii2-googlecharts) [![Total Downloads](https://poser.pugx.org/bsadnu/yii2-googlecharts/downloads)](https://packagist.org/packages/bsadnu/yii2-googlecharts) [![Latest Unstable Version](https://poser.pugx.org/bsadnu/yii2-googlecharts/v/unstable)](https://packagist.org/packages/bsadnu/yii2-googlecharts) [![License](https://poser.pugx.org/bsadnu/yii2-googlecharts/license)](https://packagist.org/packages/bsadnu/yii2-googlecharts)
-
 This extension contains a set of chart widgets based on [Google Charts API](https://developers.google.com/chart/).
 
 Installation
@@ -13,13 +11,13 @@ The preferred way to install this extension is through [composer](http://getcomp
 Either run
 
 ```
-php composer.phar require --prefer-dist bsadnu/yii2-googlecharts "*"
+php composer.phar require --prefer-dist skker/yii2-googlecharts "*"
 ```
 
 or add
 
 ```json
-"bsadnu/yii2-googlecharts": "*"
+"skker/yii2-googlecharts": "*"
 ```
 
 to the require section of your composer.json.
@@ -32,12 +30,11 @@ To use any of these widgets,  simply add the following code in your view.
 ### Column Chart Example
 ```php
 ...
-use bsadnu\googlecharts\ColumnChart;
+use skker\googlecharts\ColumnChart;
 ...
 ```
 1) Simple Column Chart
 
-![demo](http://img.sbannikov.info/ColumnChartSimple.png)
 ```php
 <?= ColumnChart::widget([
 	'id' => 'my-column-chart-id',
@@ -88,7 +85,6 @@ use bsadnu\googlecharts\ColumnChart;
 
 2) Stacked Column Chart
 
-![demo](http://img.sbannikov.info/ColumnChartStacked.png)
 ```php
 <?= ColumnChart::widget([
 	'id' => 'my-stacked-column-chart-id',
@@ -143,7 +139,6 @@ use bsadnu\googlecharts\ColumnChart;
 
 3) Trendlines Column Chart
 
-![demo](http://img.sbannikov.info/ColumnChartTrendlines.png)
 ```php
 <?= ColumnChart::widget([
     'id' => 'my-column-trendlines-chart-id',
@@ -217,7 +212,6 @@ use bsadnu\googlecharts\ColumnChart;
 
 4) Diff Column Chart
 
-![demo](http://img.sbannikov.info/ColumnChartDiff.png)
 ```php
 <?= ColumnChart::widget([
     'id' => 'my-column-diff-chart-id',
@@ -297,12 +291,11 @@ use bsadnu\googlecharts\ColumnChart;
 ### Bar Chart Example
 ```php
 ...
-use bsadnu\googlecharts\BarChart;
+use skker\googlecharts\BarChart;
 ...
 ```
 1) Simple Bar Chart
 
-![demo](http://img.sbannikov.info/BarChart.png)
 ```php
 <?= BarChart::widget([
 	'id' => 'my-bar-chart-id',
@@ -348,7 +341,6 @@ use bsadnu\googlecharts\BarChart;
 
 2) Stacked Bar Chart
 
-![demo](http://img.sbannikov.info/BarChartStacked.png)
 ```php
 <?= BarChart::widget([
 	'id' => 'my-stacked-bar-chart-id',
@@ -399,10 +391,10 @@ use bsadnu\googlecharts\BarChart;
 ### Histogram Example
 ```php
 ...
-use bsadnu\googlecharts\Histogram;
+use skker\googlecharts\Histogram;
 ...
 ```
-![demo](http://img.sbannikov.info/Histogram.png)
+
 ```php
 <?= Histogram::widget([
 	'id' => 'my-simple-histogram-id',
@@ -485,10 +477,10 @@ use bsadnu\googlecharts\Histogram;
 ### Combo Chart Example
 ```php
 ...
-use bsadnu\googlecharts\ComboChart;
+use skker\googlecharts\ComboChart;
 ...
 ```
-![demo](http://img.sbannikov.info/ComboChart.png)
+
 ```php
 <?php
 echo ComboChart::widget([
@@ -556,12 +548,11 @@ $this->registerJs("
 ### Line Chart Example
 ```php
 ...
-use bsadnu\googlecharts\LineChart;
+use skker\googlecharts\LineChart;
 ...
 ```
 1) Simple Line Chart
 
-![demo](http://img.sbannikov.info/LineChartSimple.png)
 ```php
 <?= LineChart::widget([
 	'id' => 'my-simple-line-chart-id',
@@ -614,7 +605,6 @@ use bsadnu\googlecharts\LineChart;
 
 2) Line Intervals Chart
 
-![demo](http://img.sbannikov.info/LineChartIntervals.png)
 ```php
 <?= LineChart::widget([
 	'id' => 'my-line-intervals-id',
@@ -674,7 +664,6 @@ use bsadnu\googlecharts\LineChart;
 
 3) Line Intervals Area Chart
 
-![demo](http://img.sbannikov.info/LineChartIntervalsArea.png)
 ```php
 <?= LineChart::widget([
 	'id' => 'my-area-intervals-id',
@@ -735,12 +724,11 @@ use bsadnu\googlecharts\LineChart;
 ### Area Chart Example
 ```php
 ...
-use bsadnu\googlecharts\AreaChart;
+use skker\googlecharts\AreaChart;
 ...
 ```
 1) Simple Area Chart
 
-![demo](http://img.sbannikov.info/AreaChart.png)
 ```php
 <?= AreaChart::widget([
 	'id' => 'my-simple-area-chart-id',
@@ -794,7 +782,6 @@ use bsadnu\googlecharts\AreaChart;
 
 2) Stacked Area Chart
 
-![demo](http://img.sbannikov.info/AreaChartStacked.png)
 ```php
 <?= AreaChart::widget([
 	'id' => 'my-staked-area-chart-id',
@@ -851,10 +838,10 @@ use bsadnu\googlecharts\AreaChart;
 ### Stepped Area Chart Example
 ```php
 ...
-use bsadnu\googlecharts\SteppedAreaChart;
+use skker\googlecharts\SteppedAreaChart;
 ...
 ```
-![demo](http://img.sbannikov.info/SteppedAreaChart.png)
+
 ```php
 <?= SteppedAreaChart::widget([
 	'id' => 'my-stepped-area-chart-id',
@@ -909,10 +896,10 @@ use bsadnu\googlecharts\SteppedAreaChart;
 ### Pie Chart Example
 ```php
 ...
-use bsadnu\googlecharts\PieChart;
+use skker\googlecharts\PieChart;
 ...
 ```
-![demo](http://img.sbannikov.info/PieChart.png)
+
 ```php
 <?= PieChart::widget([
     'id' => 'my-pie-chart-id',
@@ -953,10 +940,10 @@ use bsadnu\googlecharts\PieChart;
 ### Sankey Diagram Example
 ```php
 ...
-use bsadnu\googlecharts\Sankey;
+use skker\googlecharts\Sankey;
 ...
 ```
-![demo](http://img.sbannikov.info/Sankey.png)
+
 ```php
 <?= Sankey::widget([
     'id' => 'my-sankey-diagram-id',
@@ -1032,10 +1019,10 @@ use bsadnu\googlecharts\Sankey;
 ### Geo Chart Example
 ```php
 ...
-use bsadnu\googlecharts\GeoChart;
+use skker\googlecharts\GeoChart;
 ...
 ```
-![demo](http://img.sbannikov.info/GeoChartRegions.png)
+
 ```php
 <?= GeoChart::widget([
     'id' => 'my-regions-geo-chart-id',
@@ -1066,12 +1053,11 @@ use bsadnu\googlecharts\GeoChart;
 ### Bubble Chart Example
 ```php
 ...
-use bsadnu\googlecharts\BubbleChart;
+use skker\googlecharts\BubbleChart;
 ...
 ```
 1) Simple Bubble Chart
 
-![demo](http://img.sbannikov.info/BubbleChartSimple.png)
 ```php
 <?= BubbleChart::widget([
     'id' => 'my-simple-bubble-chart-id',
@@ -1135,7 +1121,6 @@ use bsadnu\googlecharts\BubbleChart;
 
 2) Bubble Chart Color by Numbers
 
-![demo](http://img.sbannikov.info/BubbleChartColorByNumbers.png)
 ```php
 <?= BubbleChart::widget([
     'id' => 'my-colnumb-bubble-chart-id',
@@ -1184,12 +1169,11 @@ use bsadnu\googlecharts\BubbleChart;
 ### Scatter Chart Example
 ```php
 ...
-use bsadnu\googlecharts\ScatterChart;
+use skker\googlecharts\ScatterChart;
 ...
 ```
 1) Simple Scatter Chart
 
-![demo](http://img.sbannikov.info/ScatterChartSimple.png)
 ```php
 <?= ScatterChart::widget([
     'id' => 'my-scatter-simple-chart-id',
@@ -1253,7 +1237,6 @@ use bsadnu\googlecharts\ScatterChart;
 
 2) Diff Scatter Chart
 
-![demo](http://img.sbannikov.info/ScatterChartDiff.png)
 ```php
 <?= ScatterChart::widget([
     'id' => 'my-scatter-diff-chart-id',
@@ -1332,4 +1315,4 @@ use bsadnu\googlecharts\ScatterChart;
 
 ## License
 
-**yii2-googlecharts** is released under the BSD 2-Clause License. See the bundled [LICENSE](https://github.com/bsadnu/yii2-googlecharts/blob/master/LICENSE) for details.
+**yii2-googlecharts** is released under the BSD 2-Clause License. See the bundled [LICENSE](https://github.com/skker/yii2-googlecharts/blob/master/LICENSE) for details.
