@@ -132,7 +132,7 @@ class ComboChart extends Widget
 
                 var options_combo". $uniqueInt ." = ". Json::encode($this->options) .";
 
-                var combo". $uniqueInt ." = new google.visualization.ComboChart($('#". $this->id ."')[0]);
+                combo". $uniqueInt ." = new google.visualization.ComboChart($('#". $this->id ."')[0]);
                 combo". $uniqueInt .".draw(data". $uniqueInt .", options_combo". $uniqueInt .");
             }
 
