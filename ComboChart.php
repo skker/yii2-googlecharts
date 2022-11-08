@@ -124,6 +124,8 @@ class ComboChart extends Widget
             google.setOnLoadCallback(drawCombo". $uniqueInt .");
         ";
         $js .= "
+            var combo". $uniqueInt ." = '';
+
             function drawCombo". $uniqueInt ."() {
 
                 var data". $uniqueInt ." = google.visualization.arrayToDataTable(". Json::encode($this->data) .");
@@ -132,6 +134,11 @@ class ComboChart extends Widget
 
                 var combo". $uniqueInt ." = new google.visualization.ComboChart($('#". $this->id ."')[0]);
                 combo". $uniqueInt .".draw(data". $uniqueInt .", options_combo". $uniqueInt .");
+            }
+
+            // Get the chart image data in PNG.
+            function getChartImageData() {
+                return combo".$uniqueInt.".getImageURI();
             }
         ";        
         $js .= "
@@ -144,6 +151,11 @@ class ComboChart extends Widget
                     drawCombo". $uniqueInt ."();
                 }
             });
+        ";
+        $js .= "
+            function getGoogleChart() {
+                return combo". $uniqueInt ." = new google.visualization.ComboChart($('#". $this->id ."')[0]);
+            }
         ";
 
         return $js;
