@@ -1,13 +1,13 @@
 <?php
 
-namespace bsadnu\googlecharts;
+namespace skker\googlecharts;
 
 use Yii;
 use yii\base\Widget;
 use yii\helpers\Html;
 use yii\helpers\Json;
 use yii\web\View;
-use bsadnu\googlecharts\GoogleJsApiAsset;
+use skker\googlecharts\GoogleJsApiAsset;
 
 /**
  * Scatter chart widget.

@@ -1,6 +1,6 @@
 <?php
 
-namespace bsadnu\googlecharts;
+namespace skker\googlecharts;
 
 use yii\web\AssetBundle;
 
